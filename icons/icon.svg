@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B3D3A"/>
+      <stop offset="100%" stop-color="#062E2B"/>
+    </linearGradient>
+  </defs>
+  <!-- Full bleed solid background for maskable -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- Soft vignette circle for depth (safe inside maskable zone) -->
+  <circle cx="256" cy="256" r="210" fill="#12625D"/>
+  <!-- Dumbbell: bar + plates, bold, centered, within ~60% safe zone -->
+  <g fill="#F4F7F6" transform="translate(256 256)">
+    <!-- Bar -->
+    <rect x="-118" y="-14" width="236" height="28" rx="8"/>
+    <!-- Left outer plate -->
+    <rect x="-168" y="-58" width="36" height="116" rx="10"/>
+    <!-- Left inner plate -->
+    <rect x="-128" y="-42" width="22" height="84" rx="7"/>
+    <!-- Right outer plate -->
+    <rect x="132" y="-58" width="36" height="116" rx="10"/>
+    <!-- Right inner plate -->
+    <rect x="106" y="-42" width="22" height="84" rx="7"/>
+    <!-- Center grip bump -->
+    <rect x="-22" y="-18" width="44" height="36" rx="10" fill="#D8EDE9"/>
+  </g>
+</svg>
